@@ -1,0 +1,27 @@
+onEvent("trigale_button", "click", function( ) {
+  setScreen("triangle_screen");
+});
+onEvent("return_tri", "click", function( ) {
+  setScreen("menu");
+});
+onEvent("para_button", "click", function( ) {
+  setScreen("para_screen");
+});
+onEvent("return_para", "click", function( ) {
+  setScreen("menu");
+});
+onEvent("kite_button", "click", function( ) {
+  setScreen("kite_screen");
+});
+onEvent("return_kit", "click", function( ) {
+  setScreen("menu");
+});
+onEvent("result_tri", "click", function( ) {
+  setText("answer_tri", (1 / 2) * (getNumber("base_tri") * getNumber("height_tri")));
+});
+onEvent("result_para", "click", function( ) {
+  setText("answer_para", (1 / 2) * (getNumber("height_para") * (getNumber("para_1") + getNumber("para_2"))));
+});
+onEvent("id", "click", function( ) {
+  setText("answer_kit", (1 / 2) * (getNumber("diagnol1") * getNumber("diagnol2")));
+});
